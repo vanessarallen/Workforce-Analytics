@@ -731,26 +731,26 @@ set opm_factdata_enhanced;
 RUN;
 
 /*formats for simulated demographics*/
-proc format;
-	value race
-		1="American Indian/Alaska Native"	
-		2="Asian"	
-		3="Black/African American"	
-		4="Native Hawaiin/Other Pacific Islander"	
-		5="White"	
-		6="Two or more races"
-	;
-
-	value gender
-		0="Male"
-		1="Female"
-	;
-
-	value YN
-		0="No"
-		1="Yes"
-	;
-run;
+/* proc format; */
+/* 	value race */
+/* 		1="American Indian/Alaska Native"	 */
+/* 		2="Asian"	 */
+/* 		3="Black/African American"	 */
+/* 		4="Native Hawaiin/Other Pacific Islander"	 */
+/* 		5="White"	 */
+/* 		6="Two or more races" */
+/* 	; */
+/*  */
+/* 	value gender */
+/* 		0="Male" */
+/* 		1="Female" */
+/* 	; */
+/*  */
+/* 	value YN */
+/* 		0="No" */
+/* 		1="Yes" */
+/* 	; */
+/* run; */
 		
 /*creating macro to randomly assign race based on race proportions by agency from opm*/
 /*Race/Ethnicity Source: https://www.fedscope.opm.gov/ibmcognos/bi/v1/disp?b_action=powerPlayService&m_encoding=UTF-8&BZ=1AAABmcxRP3142oWOT2uDQBDFv8yOaQ8Ns09NzcHD6q5EaDWNuRdjNkGaaFEp9NsXFfonl77HwPDm%7EWCcIl8W_3xnUh32Q9vZVN8RUKtArh4ZK_MnxnMDFSVRHHiSleLIDTxDwL0zskbt4s1W7TchIanaZrDNQEhO7eVoO%7EIj8rgpr5ZcvdiW1Vt5tv2rrj9s19fD54J8TUje58Pf9neJwA8E1ray14PtCAwGRtTRRbyM8ywz8T7Ns0w9m%7EAfzIlewhOzkMwsJQshWPgswGK0EOpsm2pkCUcCq8uFeP3UVuVQt81NLAgBwWWClYQDYT0H8icQkwjuWP8lOXna5memmV_Y9QVgm2gC*/
@@ -777,7 +777,7 @@ do i = 1 to 1;
    output; 
 end;
 
-format gender gender. hispanic yn.; 
+/* format gender gender. hispanic yn.;  */
 
 
 RUN;
