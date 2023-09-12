@@ -12,8 +12,10 @@ Data Updates mid-month every February, May, August, and December.
   ****    - Change %LET Statement for FACTDATA to correct FACTDATA month (e.g. FACTDATA_DEC2022.txt);
   ****;
 
-%LET PATH1 = https://www.opm.gov/data/datasets/Files/679/4e9c7654-2623-4521-9975-d5ecec8b968e.zip;  * STATUS Raw Data delimited text files;
-%LET MONYR = DEC2022;
+%LET PATH1 = https://www.opm.gov/data/datasets/Files/685/875df97f-0f3f-4a7c-b6b1-2a3b0d85c375.zip;  * STATUS Raw Data delimited text files;
+%LET MONYR = MAR2023;
+
+
 
 /* detect proper delim for UNIX vs. Windows */
 %let delim=%sysfunc(ifc(%eval(&sysscp. = WIN),\,/));
